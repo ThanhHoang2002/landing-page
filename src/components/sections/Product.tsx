@@ -18,7 +18,82 @@ import product12 from "../../../public/products/product12.svg"
 
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
+// Import product1 gallery images
+import product1_img1 from "../../../public/products/product1/20260113_1120_Image Generation_remix_01kets9j6ke1m91hxh56egvjg7.png";
+import product1_img2 from "../../../public/products/product1/Gemini_Generated_Image_hge49ahge49ahge4.png";
+import product1_img3 from "../../../public/products/product1/Gemini_Generated_Image_i1oqeei1oqeei1oq.png";
+import product1_img4 from "../../../public/products/product1/Gemini_Generated_Image_i6ppu7i6ppu7i6pp.png";
 
+// Import product2 gallery images
+import product2_img1 from "../../../public/products/product2/1.png";
+import product2_img2 from "../../../public/products/product2/2.png";
+import product2_img3 from "../../../public/products/product2/3.png";
+import product2_img4 from "../../../public/products/product2/4.png";
+import product2_img5 from "../../../public/products/product2/5.png";
+import product2_img6 from "../../../public/products/product2/6.png";
+import product2_img7 from "../../../public/products/product2/7.png";
+
+// Import product3 gallery images
+import product3_img1 from "../../../public/products/product3/2-Picsart-AiImageEnhancer.png";
+import product3_img2 from "../../../public/products/product3/3-Picsart-AiImageEnhancer.png";
+import product3_img3 from "../../../public/products/product3/BeautyPlus-image-enhancer-1768787115610.jpg";
+import product3_img4 from "../../../public/products/product3/BetterImage_1768787169789.jpeg";
+import product3_img5 from "../../../public/products/product3/BetterImage_1768787203215.jpeg";
+import product3_img6 from "../../../public/products/product3/BetterImage_1768787209527.jpeg";
+
+// Import product5 gallery images
+import product5_img1 from "../../../public/products/product5/product5.svg";
+
+
+// Import product6 gallery images
+import product6_img1 from "../../../public/products/product6/2.png";
+import product6_img2 from "../../../public/products/product6/3.png";
+import product6_img3 from "../../../public/products/product6/4.png";
+import product6_img4 from "../../../public/products/product6/5.png";
+import product6_img5 from "../../../public/products/product6/6.png";
+import product6_img6 from "../../../public/products/product6/7.png";
+import product6_img7 from "../../../public/products/product6/8.png";
+import product6_img8 from "../../../public/products/product6/9.png";
+
+// Import product8 gallery images
+import product8_img1 from "../../../public/products/product8/1.png";
+import product8_img2 from "../../../public/products/product8/2.png";
+import product8_img3 from "../../../public/products/product8/3.png";
+import product8_img4 from "../../../public/products/product8/4.png";
+import product8_img5 from "../../../public/products/product8/5.png";
+import product8_img6 from "../../../public/products/product8/6.png";
+import product8_img7 from "../../../public/products/product8/7.png";
+
+// Import product9 gallery images
+import product9_img1 from "../../../public/products/product9/1.png";
+import product9_img2 from "../../../public/products/product9/2.png";
+import product9_img3 from "../../../public/products/product9/3.png";
+import product9_img4 from "../../../public/products/product9/4.png";
+import product9_img5 from "../../../public/products/product9/5.png";
+import product9_img6 from "../../../public/products/product9/6.png";
+import product9_img7 from "../../../public/products/product9/7.png";
+
+// Import product10 gallery images
+import product10_img1 from "../../../public/products/product10/1.png";
+import product10_img2 from "../../../public/products/product10/2.png";
+import product10_img3 from "../../../public/products/product10/3.png";
+import product10_img4 from "../../../public/products/product10/4.png";
+import product10_img5 from "../../../public/products/product10/5.png";
+import product10_img6 from "../../../public/products/product10/6.png";
+import product10_img7 from "../../../public/products/product10/7.png";
+import product10_img8 from "../../../public/products/product10/8.png";
+
+// Import product12 gallery images
+import product12_img1 from "../../../public/products/product12/1.png";
+import product12_img2 from "../../../public/products/product12/2.png";
+import product12_img3 from "../../../public/products/product12/3.png";
+import product12_img4 from "../../../public/products/product12/4.png";
+import product12_img5 from "../../../public/products/product12/5.png";
+import product12_img6 from "../../../public/products/product12/6.png";
+import product12_img7 from "../../../public/products/product12/7.png";
+import product12_img8 from "../../../public/products/product12/8.png";
+import product12_img9 from "../../../public/products/product12/9.png";
+import product12_img10 from "../../../public/products/product12/10.png";
 
 // Product data based on Figma design
 const PRODUCTS_BIEU = [
@@ -36,7 +111,8 @@ const PRODUCTS_BIEU = [
       "• Dung tích: 700ml/chai",
       "• Nồng độ: 52°",
     ],
-    image: product1
+    image: product1,
+    gallery: [product1_img1, product1_img2, product1_img3, product1_img4]
   },
   {
     id: 2,
@@ -52,7 +128,8 @@ const PRODUCTS_BIEU = [
       "• Dung tích: 500ml/chai",
       "• Nồng độ: 52°",
     ],
-    image: product2
+    image: product2,
+    gallery: [product2_img1, product2_img2, product2_img3, product2_img4, product2_img5, product2_img6, product2_img7]
   },
   {
     id: 3,
@@ -68,7 +145,8 @@ const PRODUCTS_BIEU = [
       "• Dung tích: 500ml/chai",
       "• Nồng độ: 52°",
     ],
-    image: product3
+    image: product3,
+    gallery: [product3_img1, product3_img2, product3_img3, product3_img4, product3_img5, product3_img6]
   },
   {
     id: 4,
@@ -102,7 +180,8 @@ const PRODUCTS_BIEU = [
       "• Dung tích: 500ml/chai",
       "• Nồng độ: 52",
     ],
-    image: product5
+    image: product5,
+    gallery: [product5_img1]
   },
   {
     id: 6,
@@ -119,7 +198,8 @@ const PRODUCTS_BIEU = [
       "• Dung tích: 600ml/chai",
       "• Nồng độ: 52°",
     ],
-    image: product6
+    image: product6,
+    gallery: [product6_img1, product6_img2, product6_img3, product6_img4, product6_img5, product6_img6, product6_img7, product6_img8]
   },
 ];
 
@@ -154,7 +234,8 @@ const PRODUCTS_GIA_DINH = [
       "• Dung tích: 500ml/chai",
       "• Nồng độ: 52°",
     ],
-    image: product8
+    image: product8,
+    gallery: [product8_img1, product8_img2, product8_img3, product8_img4, product8_img5, product8_img6, product8_img7]
   },
   {
     id: 9,
@@ -170,7 +251,8 @@ const PRODUCTS_GIA_DINH = [
       "• Dung tích: 500ml/chai",
       "•  Nồng độ: 52°",
     ],
-    image: product9
+    image: product9,
+    gallery: [product9_img1, product9_img2, product9_img3, product9_img4, product9_img5, product9_img6, product9_img7]
   },
   {
     id: 10,
@@ -186,7 +268,8 @@ const PRODUCTS_GIA_DINH = [
       "• Dung tích: 500ml/chai",
       "•  Nồng độ: 52°",
     ],
-    image: product10
+    image: product10,
+    gallery: [product10_img1, product10_img2, product10_img3, product10_img4, product10_img5, product10_img6, product10_img7, product10_img8]
   },
   {
     id: 11,
@@ -222,7 +305,8 @@ const PRODUCTS_GIA_DINH = [
       "• Dung tích: 700ml/chai",
       "•   Nồng độ: 52°",
     ],
-    image: product12
+    image: product12,
+    gallery: [product12_img1, product12_img2, product12_img3, product12_img4, product12_img5, product12_img6, product12_img7, product12_img8, product12_img9, product12_img10]
   },
 ];
 
@@ -252,6 +336,11 @@ const Product = () => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -572,7 +661,7 @@ const Product = () => {
         </div>
 
         {/* Order Form Section */}
-        <div className="mb-12 md:mb-16">
+        <div id="form-product" className="mb-12 md:mb-16">
           <div className="flex justify-center mb-8 md:mb-12">
             <div className="relative w-full max-w-[424px] h-[80px] md:h-[108px]">
               <div
@@ -610,7 +699,7 @@ const Product = () => {
                 NHẬN ƯU ĐÃI
               </motion.h3>
 
-              <form id="form-product" onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                 {submitStatus.type && (
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -673,20 +762,38 @@ const Product = () => {
                   whileFocus={{ scale: 1.02 }}
                 />
 
-                <motion.input
+                <motion.select
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.6 }}
-                  type="text"
                   name="product"
-                  placeholder="Sản phẩm quan tâm"
                   value={formData.product}
-                  onChange={handleInputChange}
-                  className="w-full px-4 md:px-6 py-3 md:py-4 rounded bg-white text-black/45 placeholder:text-black/45 text-base md:text-lg font-montserrat focus:outline-none focus:ring-2 focus:ring-[#FFEE56] transition-all"
+                  onChange={handleSelectChange}
+                  className="w-full px-4 md:px-6 py-3 md:py-4 rounded bg-white text-black/45 text-base md:text-lg font-montserrat focus:outline-none focus:ring-2 focus:ring-[#FFEE56] transition-all cursor-pointer appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23666%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3e%3cpolyline points=%276 9 12 15 18 9%27%3e%3c/polyline%3e%3c/svg%3e')] bg-[length:1.5em] bg-[right_0.5rem_center] bg-no-repeat uppercase"
                   disabled={isSubmitting}
                   whileFocus={{ scale: 1.02 }}
-                />
+                >
+                  <option value="" disabled>
+                    Chọn sản phẩm quan tâm
+                  </option>
+                  
+                  <optgroup label="🎁 Mẫu Rượu Biếu" className="font-bold text-[#FF061C]">
+                    {PRODUCTS_BIEU.map((product) => (
+                      <option key={product.id} value={product.name} className="text-black">
+                        {product.name} - {product.price}
+                      </option>
+                    ))}
+                  </optgroup>
+
+                  <optgroup label="🏠 Mẫu Rượu Gia Đình" className="font-bold text-[#FF061C]">
+                    {PRODUCTS_GIA_DINH.map((product) => (
+                      <option key={product.id} value={product.name} className="text-black uppercase">
+                        {product.name} - {product.price}
+                      </option>
+                    ))}
+                  </optgroup>
+                </motion.select>
 
                 <motion.input
                   initial={{ opacity: 0, x: -20 }}
@@ -774,16 +881,197 @@ const Product = () => {
   );
 };
 
+// Image Gallery Dialog Component
+const ImageGalleryDialog = ({
+  images,
+  isOpen,
+  onClose,
+  initialIndex = 0,
+}: {
+  images: StaticImport[];
+  isOpen: boolean;
+  onClose: () => void;
+  initialIndex?: number;
+}) => {
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+
+  useEffect(() => {
+    setCurrentIndex(initialIndex);
+  }, [initialIndex]);
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const handlePrevious = () => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    const handleArrowLeft = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") handlePrevious();
+    };
+    const handleArrowRight = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight") handleNext();
+    };
+
+    if (isOpen) {
+      document.addEventListener("keydown", handleEscape);
+      document.addEventListener("keydown", handleArrowLeft);
+      document.addEventListener("keydown", handleArrowRight);
+      document.body.style.overflow = "hidden";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.removeEventListener("keydown", handleArrowLeft);
+      document.removeEventListener("keydown", handleArrowRight);
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen, currentIndex]);
+
+ 
+
+  if (!isOpen) return null;
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-fadeIn"
+      onClick={onClose}
+    >
+      {/* Backdrop */}
+      <div className="absolute inset-0 bg-black/90 backdrop-blur-sm" />
+
+      {/* Dialog Content */}
+      <div
+        className="relative w-full max-w-5xl animate-scaleIn"
+        onClick={(e) => e.stopPropagation()}
+      >
+
+        {/* Image Container */}
+        <div className="relative bg-black/50 rounded-lg overflow-hidden">
+          <div className="relative w-full aspect-[4/3]">
+            <Image
+              src={images[currentIndex]}
+              alt={`Ảnh ${currentIndex + 1}`}
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+
+          {/* Navigation Arrows */}
+          {images.length > 1 && (
+            <>
+              <button
+                onClick={handlePrevious}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all hover:scale-110"
+                aria-label="Ảnh trước"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+
+              <button
+                onClick={handleNext}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all hover:scale-110"
+                aria-label="Ảnh tiếp"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </>
+          )}
+
+          {/* Image Counter */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 text-white px-4 py-2 rounded-full text-sm">
+            {currentIndex + 1} / {images.length}
+          </div>
+        </div>
+
+        {/* Thumbnail Strip */}
+        {images.length > 1 && (
+          <div className="flex gap-2 mt-4 justify-center overflow-x-auto pb-2">
+            {images.map((img, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`relative w-20 h-20 flex-shrink-0 rounded overflow-hidden transition-all ${
+                  index === currentIndex
+                    ? "ring-2 ring-[#FFEE56] scale-110"
+                    : "opacity-60 hover:opacity-100"
+                }`}
+              >
+                <Image
+                  src={img}
+                  alt={`Thumbnail ${index + 1}`}
+                  fill
+                  className="object-cover"
+                />
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
 // Product Card Component
 const ProductCard = ({
   product,
 }: {
-  product: { name: string; price: string; details: string[], image: StaticImport };
+  product: { 
+    name: string; 
+    price: string; 
+    details: string[]; 
+    image: StaticImport;
+    gallery?: StaticImport[];
+  };
 }) => {
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+
+  const handleImageClick = () => {
+    if (product.gallery && product.gallery.length > 0) {
+      setIsGalleryOpen(true);
+    }
+  };
+
   return (
-    <div className="flex flex-col items-center gap-3 md:gap-4 h-full">
-      {/* Product Image Placeholder */}
-      <Image className="w-full" src={product.image} alt={product.name} />
+    <>
+      <div className="flex flex-col items-center gap-3 md:gap-4 h-full">
+        {/* Product Image Placeholder */}
+        <div 
+          className={`w-full ${product.gallery && product.gallery.length > 0 ? 'cursor-pointer hover:opacity-90 transition-opacity' : ''}`}
+          onClick={handleImageClick}
+        >
+          <Image className="w-full" src={product.image} alt={product.name} />
+        </div>
 
       {/* Product Info Card */}
       <div className="flex-1 w-full border border-[#FFEE56] p-4 md:p-6 shadow-[0_0_10px_#FFEE56]">
@@ -800,20 +1088,31 @@ const ProductCard = ({
         </div>
       </div>
 
-      {/* Price Button */}
-      <a href="#form-product" className="relative w-full max-w-[217px] h-[60px]" >
-        <div
-          className="absolute inset-0 bg-[#FFCD40] rounded-full"
-          style={{
-            boxShadow:
-              "0px 0px 0px 4px rgba(244, 159, 36, 1), inset 12px 12px 2px 0px rgba(255, 218, 143, 1), inset -8px -8px 2px 0px rgba(239, 187, 58, 1)",
-          }}
+        {/* Price Button */}
+        <a href="#form-product" className="relative w-full max-w-[217px] h-[60px]" >
+          <div
+            className="absolute inset-0 bg-[#FFCD40] rounded-full"
+            style={{
+              boxShadow:
+                "0px 0px 0px 4px rgba(244, 159, 36, 1), inset 12px 12px 2px 0px rgba(255, 218, 143, 1), inset -8px -8px 2px 0px rgba(239, 187, 58, 1)",
+            }}
+          />
+          <span className="absolute inset-0 flex items-center justify-center text-[#FF061C] text-2xl md:text-3xl lg:text-4xl font-bold italic" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+            {product.price}
+          </span>
+        </a>
+      </div>
+
+      {/* Image Gallery Dialog */}
+      {product.gallery && product.gallery.length > 0 && (
+        <ImageGalleryDialog
+          images={product.gallery}
+          isOpen={isGalleryOpen}
+          onClose={() => setIsGalleryOpen(false)}
+          initialIndex={0}
         />
-        <span className="absolute inset-0 flex items-center justify-center text-[#FF061C] text-2xl md:text-3xl lg:text-4xl font-bold italic" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
-          {product.price}
-        </span>
-      </a>
-    </div>
+      )}
+    </>
   );
 };
 
