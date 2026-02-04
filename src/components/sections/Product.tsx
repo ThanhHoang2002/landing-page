@@ -41,8 +41,18 @@ import product3_img4 from "../../../public/products/product3/BetterImage_1768787
 import product3_img5 from "../../../public/products/product3/BetterImage_1768787203215.jpeg";
 import product3_img6 from "../../../public/products/product3/BetterImage_1768787209527.jpeg";
 
+// Import product4 gallery images
+import product4_img1 from "../../../public/products/product4/1.png";
+import product4_img2 from "../../../public/products/product4/2.png";
+import product4_img3 from "../../../public/products/product4/3.png";
+ 
+
 // Import product5 gallery images
-import product5_img1 from "../../../public/products/product5/product5.svg";
+import product5_img1 from "../../../public/products/product5/1.png";
+import product5_img2 from "../../../public/products/product5/2.png";
+import product5_img3 from "../../../public/products/product5/3.png";
+import product5_img4 from "../../../public/products/product5/4.png";
+
 
 
 // Import product6 gallery images
@@ -166,7 +176,8 @@ const PRODUCTS_BIEU = [
       "• Dung tích: 700ml/chai",
       "• Nồng độ: 52",
     ],
-    image: product4
+    image: product4,
+    gallery: [product4_img1, product4_img2, product4_img3]
   },
   {
     id: 5,
@@ -185,7 +196,7 @@ const PRODUCTS_BIEU = [
       "• Nồng độ: 52",
     ],
     image: product5,
-    gallery: [product5_img1]
+    gallery: [product5_img1, product5_img2, product5_img3, product5_img4]
   },
   {
     id: 6,
@@ -211,7 +222,7 @@ const PRODUCTS_GIA_DINH = [
   {
     id: 7,
     name: "RƯỢU SÂM PANDA",
-    price: "498.000đ",
+    price: "Hết Hàng",
     details: [
       "• Hộp: 2 chai",
       "• Kích Thước Hộp: 35x25x11 (cm)",
@@ -263,7 +274,7 @@ const PRODUCTS_GIA_DINH = [
     name: "rượu sâm nhung hươu",
     price: "648.000đ",
     details: [
-      "• Hộp: 2 chai",
+      "• Hộp: 1 chai",
       "• Kích Thước Hộp: 35x25x11 (cm)",
       "• Thành phần chính:",
       "1. Rượu Mao Đài",
@@ -299,7 +310,7 @@ const PRODUCTS_GIA_DINH = [
     name: "RƯỢU HẢI SÂM",
     price: "1.498.000đ",
     details: [
-      "• Hộp: 2 chai",
+      "• Hộp: 1 chai",
       "• Kích Thước Hộp: 38x28x12 (cm)",
       "• Thành phần chính:",
       "1. Rượu Mao Đài",
@@ -377,7 +388,7 @@ const Product = () => {
       if (result.status === "success") {
         // Track Facebook Pixel event - Lead
         if (typeof window !== 'undefined' && window .fbq) {
-          window.fbq('track', 'Tạo đơn thành công', {
+          window.fbq('track', 'CompleteRegistration', {
             product_name: formData.product,
             customer_name: formData.name,
             customer_phone: formData.phone,
@@ -451,6 +462,9 @@ const Product = () => {
         backgroundPosition: "center",
       }}
     >
+      <Image className="absolute top-0 left-0" src={'/bg/logo1.svg'} alt="đèn lồng" width={146} height={192}/>
+      <Image className="absolute top-0 -right-28 md:right-0" src={'/bg/logo2.svg'} alt="đèn lồng" width={295} height={233}/>
+
       {/* Success Modal */}
       {showSuccessModal && (
         <div
@@ -816,7 +830,7 @@ const Product = () => {
                   transition={{ duration: 0.5, delay: 0.7 }}
                   type="text"
                   name="callTime"
-                  placeholder="Gọi cho tôi lúc"
+                  placeholder="Địa chỉ nhận hàng"
                   value={formData.callTime}
                   onChange={handleInputChange}
                   className="w-full px-4 md:px-6 py-3 md:py-4 rounded bg-white text-black/45 placeholder:text-black/45 text-base md:text-lg font-montserrat focus:outline-none focus:ring-2 focus:ring-[#FFEE56] transition-all"
