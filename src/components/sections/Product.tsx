@@ -377,11 +377,11 @@ const Product = () => {
       if (result.status === "success") {
         // Track Facebook Pixel event - Lead
         if (typeof window !== 'undefined' && window .fbq) {
-          window.fbq('track', 'Lead', {
-            content_name: formData.product,
-            content_category: 'Rượu Sâm',
-            value: parseFloat(formData.product.match(/[\d,]+/)?.[0]?.replace(/,/g, '') || '0') / 1000,
-            currency: 'VND',
+          window.fbq('track', 'Tạo đơn thành công', {
+            product_name: formData.product,
+            customer_name: formData.name,
+            customer_phone: formData.phone,
+            customer_email: formData.email,
           });
         }
 

@@ -59,9 +59,9 @@ export default function RootLayout({
   return (
     <html lang="en">
             <head>
-        {/* Meta Pixel Code */}
+        {/* Meta Pixel Code - Pixel 1 */}
         <Script
-          id="meta-pixel"
+          id="meta-pixel-1"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -84,6 +84,27 @@ export default function RootLayout({
             width="1"
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=1393743885565731&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
+
+        {/* Meta Pixel Code - Pixel 2 */}
+        <Script
+          id="meta-pixel-2"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              fbq('init', '1407744310211086');
+              fbq('track', 'PageView');
+            `,
+          }}
+        />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=PIXEL_ID_THU_2&ev=PageView&noscript=1"
             alt=""
           />
         </noscript>
