@@ -4,6 +4,13 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import product1 from "../../../public/products/product1.svg"
+
+// Declare fbq type for Facebook Pixel
+declare global {
+  interface Window {
+    fbq?: (action: string, event: string, params?: Record<string, string | number>) => void;
+  }
+}
 import product2 from "../../../public/products/product2.svg"
 import product3 from "../../../public/products/product3.svg"
 import product4 from "../../../public/products/product4.svg"
