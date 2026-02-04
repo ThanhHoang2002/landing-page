@@ -4,13 +4,6 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import product1 from "../../../public/products/product1.svg"
-
-// Declare fbq type for Facebook Pixel
-declare global {
-  interface Window {
-    fbq?: (action: string, event: string, params?: Record<string, string | number>) => void;
-  }
-}
 import product2 from "../../../public/products/product2.svg"
 import product3 from "../../../public/products/product3.svg"
 import product4 from "../../../public/products/product4.svg"
@@ -101,7 +94,11 @@ import product12_img7 from "../../../public/products/product12/7.png";
 import product12_img8 from "../../../public/products/product12/8.png";
 import product12_img9 from "../../../public/products/product12/9.png";
 import product12_img10 from "../../../public/products/product12/10.png";
-
+declare global {
+  interface Window {
+    fbq?: (action: string, event: string, params?: Record<string, string | number>) => void;
+  }
+}
 // Product data based on Figma design
 const PRODUCTS_BIEU = [
   {
@@ -378,6 +375,16 @@ const Product = () => {
       const result = await response.json();
 
       if (result.status === "success") {
+        // Track Facebook Pixel event - Lead
+        if (typeof window !== 'undefined' && window .fbq) {
+          window.fbq('track', 'Lead', {
+            content_name: formData.product,
+            content_category: 'Rượu Sâm',
+            value: parseFloat(formData.product.match(/[\d,]+/)?.[0]?.replace(/,/g, '') || '0') / 1000,
+            currency: 'VND',
+          });
+        }
+
         // Show success modal
         setShowSuccessModal(true);
 
