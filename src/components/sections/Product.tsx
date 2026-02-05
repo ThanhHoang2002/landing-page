@@ -455,7 +455,7 @@ const Product = () => {
 
   return (
     <section
-      className="relative min-h-screen w-full py-12 md:py-16 lg:py-20"
+      className="relative min-h-screen w-full py-12 md:py-16 lg:py-20 overflow-x-hidden"
       style={{
         backgroundImage: "url('/bg/product.png')",
         backgroundSize: "cover",
